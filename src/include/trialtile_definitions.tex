@@ -1,0 +1,84 @@
+\def\shapeTile{
+	(-0.5*\trialsize,-0.5*\trialsize) rectangle
+	(0.5*\trialsize,0.5*\trialsize)
+}
+
+\tikzset{
+	cardcorners/.style={
+		rounded corners=0.2cm
+	}
+}
+
+\newcommand{\trialTileLayout}{
+	\draw[black,cardcorners] \shapeTile;
+	\draw (-0.5*\trialsize,0) -- (0.5*\trialsize,0);
+	\draw (0,0) -- (0,-0.5*\trialsize);
+}
+
+\newcommand{\trialTileLayoutPrestige}{
+	\draw[purple,line width=0.2cm] \shapeTile;
+	\draw[black,cardcorners] \shapeTile;
+	\draw (-0.5*\trialsize,0) -- (0.5*\trialsize,0);
+	\draw (0,0) -- (0,-0.5*\trialsize);
+}
+
+\newcommand{\target}[3]{
+	\draw [#1, line width=0.2cm]
+		(-0.5*\trialsize+0.1,-0.1) rectangle
+		(-0.1,-0.5*\trialsize+0.1);
+	\draw [black, fill=#2]
+		(-0.5*\trialsize+0.3,-0.3) rectangle
+		(-0.3,-0.8);
+	\node[text width=\halftrialsize cm] at (-0.25*\trialsize, -0.25*\trialsize) {
+		\begin{center}
+			\color{black}{\Large \textbf Target}\\
+			\color{black}{\Huge \textbf #3}
+		\end{center}
+	};
+}
+\newcommand{\targetany}[2]{
+	\draw [#1, line width=0.2cm]
+		(-0.5*\trialsize+0.1,-0.1) rectangle
+		(-0.1,-0.5*\trialsize+0.1);
+	\node[text width=\halftrialsize cm] at (-0.25*\trialsize, -0.25*\trialsize) {
+		\begin{center}
+			\color{black}{\Large \textbf Target}\\
+			\color{black}{\Huge \textbf #2}
+		\end{center}
+	};
+}
+
+\newcommand{\money}[2]{
+	\node[text width=\halftrialsize cm] at (0.25*\trialsize, -0.25*\trialsize) {
+		\begin{center}
+			\color{black}{\Large \textbf Money}\\
+			\color{black}{\Huge \textbf #1 / #2}
+		\end{center}
+	};
+}
+
+\newcommand{\deadline}[1]{
+	\node[text width=\halftrialsize cm] at (-0.25*\trialsize, 0.25*\trialsize) {
+		\begin{center}
+			\color{black}{\Large \textbf Deadline}\\
+			\color{black}{\Huge \textbf #1}
+		\end{center}
+	};
+}
+\newcommand{\timecubes}[1]{
+	\foreach \n in {1,...,#1} {
+		\draw [fill]
+			(-0.5*\trialsize+0.1, 0.5*\trialsize-0.1*\n-0.4*\n+0.4) rectangle
+			(-0.5*\trialsize+0.5, 0.5*\trialsize-0.1*\n-0.4*\n);
+	}
+}
+
+\newcommand{\prestige}[1]{
+	\node[text width=\halftrialsize cm] at (0.25*\trialsize, 0.25*\trialsize) {
+		\begin{center}
+			\color{black}{\Large \textbf Prestige}\\
+			\color{black}{\Huge \textbf #1}
+		\end{center}
+	};
+}
+

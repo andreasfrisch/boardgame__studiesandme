@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\input{include/libs.tex}
+\input{include/sizes.tex}
+
+\begin{document}
+\begin{center}
+\pagestyle{empty}
+\hyphenpenalty=10000
+% 15 doctors
+\foreach \n in {1,...,15}{
+	\begin{tikzpicture}
+		\draw
+			(-0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,0.5*\motivationsize) --
+			(-0.5*\motivationsize,0.5*\motivationsize) --
+			cycle;
+		\node [text width=\motivationsize cm] at (0,0) {
+			\begin{center}
+				\includegraphics[width=\motivationimagesize cm]{images_and_icons/doctor.png}
+			\end{center}
+		};
+	\end{tikzpicture}
+}
+% 10 doctors
+\foreach \n in {1,...,15}{
+	\begin{tikzpicture}
+		\draw
+			(-0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,0.5*\motivationsize) --
+			(-0.5*\motivationsize,0.5*\motivationsize) --
+			cycle;
+		\node [text width=\motivationsize cm] at (0,0) {
+			\begin{center}
+				\includegraphics[width=\motivationimagesize cm]{images_and_icons/phone.png}
+			\end{center}
+		};
+	\end{tikzpicture}
+}
+\end{center}
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[a4paper]{article}
+\input{include/libs.tex}
+\input{include/sizes.tex}
+
+\begin{document}
+\begin{center}
+\pagestyle{empty}
+\hyphenpenalty=10000
+% 5 @ 5+
+\foreach \n in {1,...,5}{
+	\begin{tikzpicture}
+		\draw
+			(-0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,0.5*\motivationsize) --
+			(-0.5*\motivationsize,0.5*\motivationsize) --
+			cycle;
+		\node [text width=\motivationsize cm] at (0,0) {
+			\begin{center}
+				\color{black}{\Huge \textbf 5+}
+			\end{center}
+		};
+	\end{tikzpicture}
+}
+% 15 @ 4+
+\foreach \n in {1,...,15}{
+	\begin{tikzpicture}
+		\draw
+			(-0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,0.5*\motivationsize) --
+			(-0.5*\motivationsize,0.5*\motivationsize) --
+			cycle;
+		\node [text width=\motivationsize cm] at (0,0) {
+			\begin{center}
+				\color{black}{\Huge \textbf 4+}
+			\end{center}
+		};
+	\end{tikzpicture}
+}
+% 30 @ 3+
+\foreach \n in {1,...,30}{
+	\begin{tikzpicture}
+		\draw
+			(-0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,0.5*\motivationsize) --
+			(-0.5*\motivationsize,0.5*\motivationsize) --
+			cycle;
+		\node [text width=\motivationsize cm] at (0,0) {
+			\begin{center}
+				\color{black}{\Huge \textbf 3+}
+			\end{center}
+		};
+	\end{tikzpicture}
+}
+% 25 @ 2+
+\foreach \n in {1,...,25}{
+	\begin{tikzpicture}
+		\draw
+			(-0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,0.5*\motivationsize) --
+			(-0.5*\motivationsize,0.5*\motivationsize) --
+			cycle;
+		\node [text width=\motivationsize cm] at (0,0) {
+			\begin{center}
+				\color{black}{\Huge \textbf 2+}
+			\end{center}
+		};
+	\end{tikzpicture}
+}
+% 5 @ 1+
+\foreach \n in {1,...,5}{
+	\begin{tikzpicture}
+		\draw
+			(-0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,0.5*\motivationsize) --
+			(-0.5*\motivationsize,0.5*\motivationsize) --
+			cycle;
+		\node [text width=\motivationsize cm] at (0,0) {
+			\begin{center}
+				\color{black}{\Huge \textbf 1+}
+			\end{center}
+		};
+	\end{tikzpicture}
+}
+\end{center}
+\end{document}

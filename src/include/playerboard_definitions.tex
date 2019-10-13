@@ -1,0 +1,74 @@
+\tikzset{
+	cardcorners/.style={
+		rounded corners=0.2cm
+	}
+}
+
+\newcommand{\playerBoardOutlineAreas}[1]{
+	\draw[dark_grey,cardcorners] (0,0) rectangle (#1*\playerboardareawidth, \playerboardheight);
+}
+
+\newcommand{\marketingareaatindex}[1]{
+	\draw (#1*\playerboardareawidth,0) -- (#1*\playerboardareawidth,\playerboardheight);
+	\node[text width=\playerboardareawidth cm] at (#1*\playerboardareawidth+0.5*\playerboardareawidth, 0.85*\playerboardheight) {
+		\begin{center}
+			\color{black}{\Large \textbf Marketing}
+		\end{center}
+	};
+	\draw[orange, line width=0.2cm]
+		(#1*\playerboardareawidth+0.2,0.5*\playerboardheight+2) rectangle
+		(#1*\playerboardareawidth+\playerboardareawidth-0.2,0.5*\playerboardheight+0.2);
+	\draw[teal, line width=0.2cm]
+		(#1*\playerboardareawidth+0.2,0.5*\playerboardheight-0.2) rectangle
+		(#1*\playerboardareawidth+\playerboardareawidth-0.2,0.5*\playerboardheight-2);
+	\draw (#1*\playerboardareawidth+\playerboardareawidth,0) -- (#1*\playerboardareawidth+\playerboardareawidth,\playerboardheight);
+}
+
+\newcommand{\onboardingareaatindex}[1]{
+	\draw (#1*\playerboardareawidth,0) -- (#1*\playerboardareawidth,\playerboardheight);
+	\node[text width=\playerboardareawidth cm] at (#1*\playerboardareawidth+0.5*\playerboardareawidth, 0.85*\playerboardheight) {
+		\begin{center}
+			\color{black}{\Large \textbf Onboarding}
+		\end{center}
+	};
+	\draw (#1*\playerboardareawidth+\playerboardareawidth,0) -- (#1*\playerboardareawidth+\playerboardareawidth,\playerboardheight);
+}
+
+\newcommand{\screeningareaatindex}[1]{
+	\draw (#1*\playerboardareawidth,0) -- (#1*\playerboardareawidth,\playerboardheight);
+	\node[text width=\playerboardareawidth cm] at (#1*\playerboardareawidth+0.5*\playerboardareawidth, 0.85*\playerboardheight) {
+		\begin{center}
+			\color{black}{\Large \textbf Screening}
+		\end{center}
+	};
+	\node[text width=\playerboardareawidth cm] at (#1*\playerboardareawidth+0.5*\playerboardareawidth, 0.5*\playerboardheight) {
+		\begin{center}
+			\includegraphics[width=\motivationimagesize cm]{images_and_icons/doctor.png}
+		\end{center}
+	};
+	\draw (#1*\playerboardareawidth+\playerboardareawidth,0) -- (#1*\playerboardareawidth+\playerboardareawidth,\playerboardheight);
+}
+
+\newcommand{\motivationareaatindex}[1]{
+	\draw (#1*\playerboardareawidth,0) -- (#1*\playerboardareawidth,\playerboardheight);
+	\node[text width=\playerboardareawidth cm] at (#1*\playerboardareawidth+0.5*\playerboardareawidth, 0.85*\playerboardheight) {
+		\begin{center}
+			\color{black}{\Large \textbf Motivation}
+		\end{center}
+	};
+	\node[text width=\playerboardareawidth cm] at (#1*\playerboardareawidth+0.5*\playerboardareawidth, 0.5*\playerboardheight) {
+		\begin{center}
+			\includegraphics[width=\motivationimagesize cm]{images_and_icons/phone.png}
+		\end{center}
+	};
+	\draw (#1*\playerboardareawidth+\playerboardareawidth,0) -- (#1*\playerboardareawidth+\playerboardareawidth,\playerboardheight);
+}
+
+\newcommand{\playerboard}{
+	\marketingareaatindex{0}
+	\onboardingareaatindex{1}
+	\screeningareaatindex{2}
+	\motivationareaatindex{3}
+	\playerBoardOutlineAreas{4}
+}
+
