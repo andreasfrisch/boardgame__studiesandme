@@ -6,25 +6,26 @@ A board game about patient recruitment for clinical trials.
 Note: certain liberties taken compared to the real world
 
 ## Content
-1 player board per player
-80 motivation tiles
-30 orange disease discs
-	14 with black sticker
-	14 with white sticker
-	2 with green sticker
-30 teal disease discs
-	14 with black sticker
-	14 with white sticker
-	2 with green sticker
-34 trial tiles
-4 prestige trial tiles
-1 motivation die
-30 Support tiles
-	15 doctors
-	15 support desks
-40 black cubes
-10 green cubes
-Assorted coins
+
+* 1 player board per player
+* 80 motivation tiles
+* 30 orange disease discs
+	* 14 with black sticker
+	* 14 with white sticker
+	* 2 with green sticker
+* 30 teal disease discs
+	* 14 with black sticker
+	* 14 with white sticker
+	* 2 with green sticker
+* 34 trial tiles
+* 4 prestige trial tiles
+* 1 motivation die
+* 30 Support tiles
+	* 15 doctors
+	* 15 support desks
+* 40 black cubes
+* 10 green cubes
+* Assorted coins
 
 ## Setup
 
