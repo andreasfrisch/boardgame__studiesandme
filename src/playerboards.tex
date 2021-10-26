@@ -7,6 +7,16 @@
 \begin{document}
 \begin{center}
 \pagestyle{empty}
+\foreach \n in {1,...,5}{
+	\begin{tikzpicture}
+		\draw
+			(-0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,0.5*\motivationsize) --
+			(-0.5*\motivationsize,0.5*\motivationsize) --
+			cycle;
+	\end{tikzpicture}
+}
 \begin{tikzpicture}
 	\playerboard
 \end{tikzpicture}

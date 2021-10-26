@@ -6,6 +6,17 @@
 \begin{center}
 \pagestyle{empty}
 \hyphenpenalty=10000
+\foreach \n in {1,...,5}{
+	\begin{tikzpicture}
+		\draw
+			(-0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,-0.5*\motivationsize) --
+			(0.5*\motivationsize,0.5*\motivationsize) --
+			(-0.5*\motivationsize,0.5*\motivationsize) --
+			cycle;
+	\end{tikzpicture}
+}
+
 % 15 doctors
 \foreach \n in {1,...,15}{
 	\begin{tikzpicture}
